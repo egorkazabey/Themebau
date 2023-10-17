@@ -21,11 +21,12 @@ $md6: 320.98;
 $md7: 935.98;
 $md8: 1245.98;
 $md9: 638.98;
-$md10: 800.98;
+$md10: 805.98;
 $md11: 1746.98;
 $md12: 671.98;
 $md13: 1440.98;
 $md14: 684.98;
+$md15: 375.98;
 
 $backgroundColor: #fff;
 $mainColor: #0E0E0E;
@@ -221,6 +222,10 @@ body {
         font-size: 16px;
         line-height: 162.5%;
     }
+}
+
+.information__text {
+    margin-bottom: 43px;
 }
 
 
@@ -641,6 +646,7 @@ body {
             font-size: 50px;
         }
         .min {
+            margin-left: -1px;
             width: 400px !important;
         }
         &__line {
@@ -661,28 +667,27 @@ body {
         &__img {
             width: 400px !important;
         }
+        &__app {
+            padding-left: -30px;
+        }
     }
 }
 
 @media (max-width: #{$md5}px) {
     .work {
         &__element1 {
-            width: 300px;
+            // width: 0px;
         }
         &__element2 {
-            width: 300px;
-        }
-        &__element3 {
-            
-        }
-        &__element4 {
-            
         }
         &__img {
             width: 304px !important;
         }
         .min {
             width: 304px !important;
+        }
+        .app {
+            margin-left: -35px;
         }
     }
 }
@@ -697,8 +702,6 @@ body {
     color: $whiteColor;
     height: 594px;
     // margin-bottom: 154px;
-    &__container {
-    }
     &__img {
         margin-top: 128px;
         margin-bottom: 92px;
@@ -765,14 +768,6 @@ body {
 //     font-size: 30px;
 // }
 
-@media (max-width: #{$md14}px) {
-    .reviews {
-        &__decoration {
-
-        }
-    }
-}
-
 // <VALUES>======================================================================
 
 .values {
@@ -828,6 +823,26 @@ body {
     }
 }
 
+@media (max-width: #{$md10}px) {
+    .values {
+        &__elements {
+            justify-content: center;
+            flex-direction: column;
+        }
+        &__element {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: #{$md15}px) {
+    .values {
+        &__title {
+            font-size: 70px;
+        }
+    }
+}
+
 // <CREATE>======================================================================
 
 .create {
@@ -865,5 +880,33 @@ body {
     &__btn {
         margin-top: 53px;
         margin-left: 130px;
+    }
+}
+
+@media (max-width: #{$md1}px) {
+    .create {
+        &__text {
+            margin-left: 0;
+        }
+        &__img1 {
+            max-width: 320px;
+        }
+    }
+}
+
+@media (max-width: #{$md10}px) {
+    .create {
+        &__btn {
+            margin-left: 0;
+        }
+        &__container {
+            flex-direction: column;
+        }
+        &__left {
+            margin: 0 auto;
+        }
+        &__right {
+            margin: 60px auto;
+        }
     }
 }
