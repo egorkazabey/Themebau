@@ -447,7 +447,6 @@ body {
 
 .clients {
     &__container {
-
         justify-content: center;
         gap: 198px;
         display: flex;
@@ -495,8 +494,10 @@ body {
 
 @media (max-width: #{$md11}px) {
     .clients {
+        
         &__container {
             flex-direction: column;
+            gap: 90px !important;
         }
         &__right {
             text-align: center;
@@ -675,11 +676,6 @@ body {
 
 @media (max-width: #{$md5}px) {
     .work {
-        &__element1 {
-            // width: 0px;
-        }
-        &__element2 {
-        }
         &__img {
             width: 304px !important;
         }
@@ -896,6 +892,9 @@ body {
 
 @media (max-width: #{$md10}px) {
     .create {
+        &__img1 {
+            width: 300px !important;
+        }
         &__btn {
             margin-left: 0;
         }

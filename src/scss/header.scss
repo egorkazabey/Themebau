@@ -6,6 +6,7 @@
   z-index: 50;
 }
 
+
 .header__container {
   display: flex;
   min-height: 90px;
@@ -20,8 +21,6 @@
   }
 }
 
-.header__menu {
-}
 
 .menu {
   display: flex;
@@ -52,8 +51,7 @@
   column-gap: 17px;
 }
 
-.social__item {
-}
+
 
 .social__link {
   img {
@@ -62,8 +60,6 @@
   }
 }
 
-.header__burger {
-}
 
 @media (max-width: #{$md1}px) {
 }
