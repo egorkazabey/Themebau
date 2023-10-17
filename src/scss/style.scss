@@ -223,10 +223,11 @@ body {
     }
 }
 
-.information__text {
-    color: $whiteColor;
-    flex-direction: row;
-    display: flex;
+
+.readmore {
+        color: $whiteColor;
+        flex-direction: row;
+        display: flex;
 }
 
 .information__arrow {
@@ -769,5 +770,43 @@ body {
         &__decoration {
 
         }
+    }
+}
+
+// <VALUES>======================================================================
+
+.values {
+    &__title {
+        text-align: center;
+        font-size: 100px;
+        line-height: 116%;
+        color: $mainColor;
+    }
+    &__elements {
+        margin-top: 84px;
+        gap: 61px;
+        justify-content: center;
+        display: flex;
+    }
+    &__element {
+        display: flex;
+        gap: 30px;
+    }
+    &__header {
+        font-size: 24px;
+        line-height: 141.667%;
+    }
+    &__text {
+        margin-top: 17px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 162.5%;
+    }
+    &__readmore {
+        font-size: 16px;
+        line-height: 162.5%;
+        color: $mainColor;
+        display: flex;
+        gap: 17px;
     }
 }
