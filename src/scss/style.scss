@@ -776,6 +776,7 @@ body {
 // <VALUES>======================================================================
 
 .values {
+    padding-top: 139px;
     &__title {
         text-align: center;
         font-size: 100px;
@@ -803,10 +804,66 @@ body {
         line-height: 162.5%;
     }
     &__readmore {
+        margin-top: 19px;
         font-size: 16px;
         line-height: 162.5%;
         color: $mainColor;
         display: flex;
         gap: 17px;
+    }
+    &__black {
+        background: $mainColor;
+        width: 130px;
+        height: 2px;
+    }
+    &__gray {
+        width: 240px;
+        height: 1px;
+        background: #ddd;
+    }
+    &__line {
+        margin-top: 85px;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+// <CREATE>======================================================================
+
+.create {
+    padding-top: 160px;
+    &__container {
+        display: flex;
+    }
+    &__img1 {
+        max-width: 470px;
+    }
+    &__img2 {
+        max-width: 140px;
+        margin-top: 30px;
+        margin-left: 130px;
+    }
+    &__img3 {
+        margin-left: 30px;
+        margin-top: 30px;
+        max-width: 270px;
+    }
+    &__title {
+        font-size: 34px;
+        line-height: 129.412%;
+        span {
+            font-size: 28px;
+        }
+    }
+    &__text {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 158.824%;
+        margin-top: 38px;
+        margin-left: 130px;
+    }
+    &__btn {
+        margin-top: 53px;
+        margin-left: 130px;
     }
 }
