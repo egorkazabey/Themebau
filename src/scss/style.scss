@@ -1,0 +1,773 @@
+// <CONNECTING FONTS>=============================================================
+
+@import "fonts";
+
+// <CONNECTING FONTS>=============================================================
+
+// <DEFAULT FONT>=============================================================
+$fontFamily: "Inter";
+$fontSize: 17;
+$fontWeight: 500;
+// <DEFAULT FONT>=============================================================
+
+// <VARIABLES>=====================================================================
+$maxWidthContainer: 1170;
+$md1: 1025.98;
+$md2: 767.98;
+$md3: 479.98;
+$md4: 601.98;
+$md5: 417.98;
+$md6: 320.98;
+$md7: 935.98;
+$md8: 1245.98;
+$md9: 638.98;
+$md10: 800.98;
+$md11: 1746.98;
+$md12: 671.98;
+$md13: 1440.98;
+$md14: 684.98;
+
+$backgroundColor: #fff;
+$mainColor: #0E0E0E;
+$lightMainColor: #202020;
+$grayColor: #6F6F6F;
+$lightGrayColor: #969696;
+$whiteColor: #fff;
+// <VARIABLES>=====================================================================
+
+// <RESET, GENERAL PARAMETERS>=====================================================
+@import "null";
+
+body {
+    height: 100%;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    color: $mainColor;
+    font-size: $fontSize;
+    line-height: 150%;
+    background-color: $backgroundColor;
+    &._lock {
+        overflow: hidden;
+    }
+}
+// <RESET, GENERAL PARAMETERS>======================================================
+
+// <SHELL>========================================================================
+.wrapper {
+    // min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+// <SHELL>========================================================================
+
+// <MAIN GRID>==================================================================
+[class*="__container"] {
+    padding: 0 15px;
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+// <MAIN GRID>==================================================================
+
+// <GLOBAL STYLES>================================================================
+
+._ibg {
+    position: relative;
+}
+
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+
+// <GLOBAL STYLES>================================================================
+
+// <CONNECTING PAGE STYLES AND ELEMENTS>=============================================
+@import "header";
+@import "footer";
+// <CONNECTING PAGE STYLES AND ELEMENTS>=============================================
+
+// <MAIN BLOCK>======================================================================
+.main {
+    flex: 1 1 auto;
+}
+// =======================INTRO======================================================
+.intro {
+    padding: 90px 0px 0px 0px;
+    background-color: $mainColor;
+}
+
+// =======================INTRO======================================================
+// <MAIN BLOCK>======================================================================
+
+
+// <WHOWEARE>======================================================================
+
+.whoweare {
+    color: $mainColor;
+    padding: 156px 0 160px 0;
+    &__flex {
+        margin-top: 93px;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+    &__header {
+        text-align: center;
+        font-size: 15px;
+    }
+    &__title {
+        margin-top: 22px;
+        line-height: 129.412%;
+        text-align: center;
+        font-size: 34px;
+        span {
+            font-size: 28px;
+        }
+    }
+    &__line {
+        margin-bottom: 34px;
+        height: 1px;
+        background: $mainColor;
+    }
+    &__right {
+        margin-top: -3px;
+    }
+    &__btn {
+        margin-top: 51px;
+        width: 170px;
+        height: 54px;
+        background: $mainColor;
+            color: $whiteColor;
+            font-size: 16px;
+            line-height: 162.5%;
+            span {
+                padding-left: 10px;
+            }
+    }
+}
+
+.buttons {
+    width: 170px;
+    height: 54px;
+    background: $mainColor;
+        color: $whiteColor;
+        font-size: 16px;
+        line-height: 162.5%;
+        span {
+            padding-left: 10px;
+        }
+}
+
+@media (max-width: #{$md2}px) {
+    .whoweare {
+        &__flex {
+            text-align: center;
+            flex-direction: column;
+        }
+        &__line {
+            margin: 0 auto;
+            margin-bottom: 34px;
+        }
+    }
+}
+
+// <SERVICES>======================================================================
+
+.services {
+    text-wrap: nowrap;
+    &__elements {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+    &__item1 {
+        background: url('../img/services/image.jpg') center (center/cover) no-repeat;
+    }
+    &__item2 {
+        background: url('../img/services/image (1).jpg') center (center/cover) no-repeat;
+    }
+    &__item3 {
+        background: url('../img/services/image (2).jpg') center (center/cover) no-repeat;
+    }
+    &__item4 {
+        background: url('../img/services/image (3).jpg') center (center/cover) no-repeat;
+
+    }
+    &__pair {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+.item {
+    padding-top: 243px;
+    padding-left: 50px;
+    width: 304px;
+    &__text {
+        font-size: 20px;
+        line-height: 150%;
+        color: $whiteColor;
+        margin-top: 24px;
+    }
+    &__information {
+        color: $whiteColor;
+        font-size: 16px;
+        line-height: 162.5%;
+    }
+}
+
+.information__text {
+    color: $whiteColor;
+    flex-direction: row;
+    display: flex;
+}
+
+.information__arrow {
+    margin-left: 17px;
+}
+
+@media (max-width: #{$md1}px) {
+    .services {
+        &__container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .item {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: #{$md8}px) {
+    .services {
+        &__pair {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: #{$md9}px) {
+    .services {
+        &__elements {
+            flex-direction: column;
+        }
+    }
+}
+
+// <LETSWORK>======================================================================
+
+.letswork {
+    padding: 160px 0 158px 0;
+    &__line {
+        margin-bottom: 158px;
+        max-width: 1170px;
+        height: 1.2px;
+        background: $mainColor;
+    }
+    &__main {
+        display: flex;
+        padding-left: 100px;
+    }
+    &__text {
+        color: $mainColor;
+        font-size: 100px;
+        line-height: 116%;
+        span {
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            cursor: pointer;
+        }
+    }
+    &__img {
+        left: -49px;
+        bottom: 70px;
+        position: relative;
+        z-index: -1;
+    }
+    &__arrow {
+        margin-left: 85px;
+        margin-top: 30px;
+        align-items: center;
+    }
+}
+
+@media (max-width: #{$md1}px) {
+    .letswork {
+        &__arrow {
+            margin-left: 20px;
+        }
+}
+}
+
+@media (max-width: #{$md7}px) {
+    .letswork {
+        &__main {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            padding-left: 0;
+        }
+        &__img {
+            margin: 30px auto;
+            height: 300px;
+            width: 300px;
+            position: static;
+        }
+    }
+}
+
+@media (max-width: #{$md4}px) {
+    .letswork {
+        &__text {
+            font-size: 74px;
+        }
+    }
+}
+
+// <BLOG>======================================================================
+
+.blog {
+    padding: 155px 0 0 0;
+    &__title {
+        text-align: center;
+        margin-bottom: 91px;
+        color: $mainColor;
+        font-size: 48px;
+        line-height: 120.833%;
+    }
+    &__elements {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__element1 {
+        height: 300px;
+        background: url('../img/blog/blog_img.jpg') center (center/cover) no-repeat;
+    }
+    &__element2 {
+        height: 300px;
+        background: url('../img/blog/blog_img2.jpg') center (center/cover) no-repeat;
+    }
+    &__element3 {
+        height: 300px;
+        background: url('../img/blog/blog_img3.jpg') center (center/cover) no-repeat;
+    }
+    &__date {
+        line-height: 135.714%;
+        font-weight: 400;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 44px;
+        background: $whiteColor;
+    }
+    &__text {
+        margin-top: 27px;
+        font-size: 20px;
+        color: $mainColor;
+        line-height: 150%;
+    }
+    &__btn {
+        margin-top: 82px;
+        text-align: center;
+    }
+    &__pair {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+@media (max-width: #{$md8}px) {
+    .blog {
+        &__elements {
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__pair {
+            gap: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+        &__element3 {
+            margin: 0 auto;
+        }
+        &__text {
+            margin-top: 13.5px;
+            text-align: center;
+        }
+        &__btn {
+            margin-top: 41px;
+        }
+    }
+}
+
+@media (max-width: #{$md10}px) {
+    .blog {
+        &__container {
+            padding: 0; 
+        }
+        &__elements {
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__pair {
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__element1 {
+            padding: 0;
+            margin: 0 auto;
+        }
+        &__element2 {
+            margin: 0 auto;
+        }
+        &__text {
+            margin-top: 13.5px;
+            text-align: center;
+        }
+    }
+}
+
+// <CLIENTS>======================================================================
+
+.clients {
+    &__container {
+
+        justify-content: center;
+        gap: 198px;
+        display: flex;
+    }
+    &__subtext {
+        padding-top: 154px;
+        font-size: 15px;
+        color: $mainColor;
+    }
+    &__header {
+        font-size: 34px;
+        color: $mainColor;
+        line-height: 129.412%;
+    }
+    &__images {
+        padding-top: 167px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__three {
+        display: flex;
+        gap: 80px;
+    }
+}
+
+@media (max-width: #{$md7}px) {
+    .clients {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        &__container {
+            flex-direction: column;
+            gap: 90px !important; 
+        }
+        &__images {
+            justify-content: center;
+            padding-top: 0;
+        }
+        &__pair {
+            flex-direction: row;
+            display: flex;
+        }
+    }
+}
+
+@media (max-width: #{$md11}px) {
+    .clients {
+        &__container {
+            flex-direction: column;
+        }
+        &__right {
+            text-align: center;
+        }
+        &__left {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: #{$md9}px) {
+    .clients {
+        &__img {
+            width: 128px;
+            height: 41px;
+        }
+        &__three {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: #{$md13}px) {
+    .clients {
+        &__images {
+            padding-top: 0;
+        }
+        &__container {
+            gap: 90px;
+        }
+    }
+}
+
+// <WORK>======================================================================
+
+.work {
+    // padding: 140px 0 157px 0;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__line {
+        background: $mainColor;
+        width: 70px;
+        height: 1px;
+        margin-top: 206px;
+    }
+    &__title {
+        padding-top: 140px;
+        color: $mainColor;
+        font-size: 100px;
+        line-height: 116%;
+    }
+    &__btn {
+        margin-top: 179px;
+    }
+    &__elements {
+        display: flex;
+        gap: 100px
+    }
+    &__element1 {
+        margin-top: 208px;
+        padding-left: 100px;
+        margin-bottom: 120px;
+    }
+    &__element2 {
+        
+        margin-top: 97px;
+    }
+    &__element3 {
+        margin-top: 48px;
+        position: relative;
+        left: -150px;
+    }
+    &__element4 {
+        margin-top: 97px;
+    }
+    &__text {
+        color: $mainColor;
+        font-size: 24px;
+        line-height: 141%;
+        span {
+            font-size: 15px;
+        }
+    }
+    &__linepair {
+        display: flex;
+        gap: 160px;
+    }
+}
+
+@media (max-width: #{$md11}px) {
+    .work {
+        &__container {
+            flex-direction: column;
+            // width: 1700px;
+        }
+        &__pair {
+            flex-direction: column;
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            
+        }
+        &__text {
+            width: 300px;
+        }
+        &__element1 {
+            padding: 0;
+            margin-bottom: 0px;
+        }
+        &__element3 {
+            position: static;
+        }
+        &__element4 {
+            margin: 97px auto;
+        }
+        &__elements {
+            flex-direction: column;
+        }
+        &__
+        &__line {
+            display: none;
+        }
+        &__elements {
+            gap: 50px !important;
+        }
+        &__linepair {
+            flex-direction: column;
+            gap: 0 !important;
+        }
+        &__header {
+            justify-content: center;
+            gap: 70px;
+        }
+    }
+}
+
+@media (max-width: #{$md12}px) {
+    .work {
+        &__element1 {
+            padding-left: 0;
+            margin-top: 100px;
+        }
+        &__title {
+            font-size: 50px;
+        }
+        .min {
+            width: 400px !important;
+        }
+        &__line {
+            display: none;
+        }
+        &__header {
+            flex-direction: column;
+        }
+        &__btn {
+            margin-top: 0;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__linepair {
+            margin: 0 auto;
+        }
+        &__img {
+            width: 400px !important;
+        }
+    }
+}
+
+@media (max-width: #{$md5}px) {
+    .work {
+        &__element1 {
+            width: 300px;
+        }
+        &__element2 {
+            width: 300px;
+        }
+        &__element3 {
+            
+        }
+        &__element4 {
+            
+        }
+        &__img {
+            width: 304px !important;
+        }
+        .min {
+            width: 304px !important;
+        }
+    }
+}
+
+// <REVIEWS>======================================================================
+
+.reviews {
+    overflow:hidden;
+    margin-top: 129px;
+    text-align: center;
+    background: $mainColor;
+    color: $whiteColor;
+    height: 594px;
+    // margin-bottom: 154px;
+    &__container {
+    }
+    &__img {
+        margin-top: 128px;
+        margin-bottom: 92px;
+    }
+    &__decoration {
+        position: relative;
+        margin: -200px auto;
+        content: "";
+        width: 641px;
+        height: 641px;
+        // bottom: -117px;
+        // right: -166px;
+        border-radius: 100%;
+        background-color: $lightMainColor;
+    }
+}
+
+.swiper {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+
+
+.swiper-wrapper {
+    box-sizing: content-box;
+}
+
+.swiper-slide{
+    // padding-top: 244px;
+    display: flex;
+    line-height: 141.667%;
+    font-size: 24px;
+    span {
+        line-height: 126.667%;
+        color: $lightGrayColor;
+        font-size: 15px;
+    }
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination {
+    margin: -130px 0;
+}
+
+/* Кнопки вперед и назад */
+// .swiper-button-prev{
+//     background-color: #bb8b5f30;
+//     left: 20px;
+// }
+
+// .swiper-button-next{
+//     background-color: #bb8b5f30;
+//     right: 20px;
+// }
+
+// .swiper-button-prev::after, .swiper-button-next::after{
+//     color: #bb8c5f;
+//     font-size: 30px;
+// }
+
+@media (max-width: #{$md14}px) {
+    .reviews {
+        &__decoration {
+
+        }
+    }
+}
